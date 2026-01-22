@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>music player</title>
+    </head>
+    <body>
+        <div class="music-player"></div>
+        {%for item in page_obj%}
+        <div class="cover">
+            <img src="{{item.image.url}}"/>
+        </div>
+
+        <div class="titre">
+            <h3>
+                {{item.artist}}
+            </h3>
+            <h1>
+                {{item.title}}
+            </h1>
+        </div>
+
+
+
+
+
+
+
+
+    </body>
+</html>
